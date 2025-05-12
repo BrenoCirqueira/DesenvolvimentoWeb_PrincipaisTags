@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Rowspan</title>
+
+    <style>
+        .r {
+            background-color: gray;
+        }
+
+        .e {
+            background-color: lightslategray
+        }
+    </style>
+</head>
+
+<body>
+    <!-- O rowspan é a mesclagem da celula porem na vertical, onde <rowspan> é a tag, = "X" é a quantidade de celulas que ele vai ter de tamanho -->
+    <h4>Utilizando o Rowspan</h4>
+
+    <p>O rowspan é a mesclagem da celula porem na vertical, onde <strong>
+            < rowspan>
+        </strong> é a tag, = <strong> "X" </strong> é a quantidade de celulas que ele vai ter de tamanho</p>
+    <table border="3" cellspacing="0" cellpadding="2">
+        <tr>
+            <th rowspan="5">Cell Base</th>
+        </tr>
+        <tr>
+            <td>Cell 1 </td>
+            <td>Cell 5</td>
+        </tr>
+        <tr>
+            <td>Cell 2</td>
+            <td>cell 6</td>
+        </tr>
+        <tr>
+            <td>Cell 3</td>
+            <td>Cell 7</td>
+        </tr>
+        <tr>
+            <td>Cell 4</td>
+            <td>Cell 8</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="3">
+        <tr>
+            <th rowspan="3">Rowspan</th>
+            <td>1</td>
+        <tr>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h3>Exercicio</h3>
+    <p>Crie uma pagina HTMLem um arquivo Chamado <em>Horarios.html</em> que contenha uma tabela de acordo com a imagem
+        abaixo</p>
+
+    <hr>
+    <table border="2">
+        <tr>
+            <th class="r">Tabela</th>
+            <th class="e">Hora Saida</th>
+            <th class="e">Hora Chegada</th>
+            <th class="e">Classe do ônibus</th>
+            <th class="e">Tarifa Normal</th>
+            <th class="e">Frequência</th>
+        </tr>
+        <tr>
+            <th class="r">Cidade A</th>
+            <td>06:00</td>
+            <td>14:00</td>
+            <td>Convencional</td>
+            <td>20,00</td>
+            <td>Diária</td>
+        </tr>
+        <tr>
+            <th class="r">Cidade B</th>
+            <td>12:00</td>
+            <td>15:00</td>
+            <td>Convencional</td>
+            <td>10,00</td>
+            <td>Domingos</td>
+        </tr>
+        <tr>
+            <th class="r">Cidade C</th>
+            <td>14:00</td>
+            <td>17:00</td>
+            <td>Leito</td>
+            <td>15,00</td>
+            <td>Diária</td>
+        </tr>
+        <tr>
+            <th class="r">Cidade D</th>
+            <td>16:00</td>
+            <td>17:00</td>
+            <td>Convencional</td>
+            <td>10,00</td>
+            <td>Diária</td>
+        </tr>
+        <tr>
+            <th class="r">Cidade E</th>
+            <td>18:30</td>
+            <td>20:00</td>
+            <td>Executivo</td>
+            <td>30,00</td>
+            <td>Domingos</td>
+        </tr>
+        <tr>
+            <th class="r">Cidade F</th>
+            <td>20:00</td>
+            <td>23:00</td>
+            <td>Convencional</td>
+            <td>80,00</td>
+            <td>Sábados</td>
+        </tr>
+        <tr>
+            <th class="r">Cidade G</th>
+            <td>21:00</td>
+            <td>23:00</td>
+            <td>Convencional</td>
+            <td>26,00</td>
+            <td>Diária</td>
+        </tr>
+        <tr>
+            <th class="r">Cidade H</th>
+            <td>22:00</td>
+            <td>23:00</td>
+            <td>Executivo</td>
+            <td>16,00</td>
+            <td>Diária</td>
+        </tr>
+        <tr>
+            <td colspan="6">Horarios De ônibus</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
